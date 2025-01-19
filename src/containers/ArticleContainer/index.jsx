@@ -1,4 +1,3 @@
-import React from "react";
 import ArticleList from "../../components/ArticleList";
 import useArticles from "../../hooks/useArticle";
 const ArticleContainer = () => {
