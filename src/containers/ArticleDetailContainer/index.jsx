@@ -1,3 +1,4 @@
+import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import useArticleDetail from "../../hooks/useArticleDetail";
 import ArticleDetails from "../../components/ArticleDetail";
@@ -5,6 +6,7 @@ import ArticleDetails from "../../components/ArticleDetail";
 const ArticleDetailContainer = () => {
   const params = useParams();
   const navigate = useNavigate();
+
   const { article, error, loading } = useArticleDetail(params?.title);
 
   if (loading) return <p>Loading...</p>;
