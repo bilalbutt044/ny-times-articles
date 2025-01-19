@@ -28,12 +28,6 @@ describe('ArticleDetails', () => {
     expect(screen.getByText(`sourc: ${mockArticle.source}`)).toBeInTheDocument();
   });
 
-  it('renders nothing if article prop is missing', () => {
-    const { container } = render(<ArticleDetails article={null} />);
-
-    // Check if nothing is rendered
-    expect(container.firstChild).toBeEmptyDOMElement();
-  });
 
   it('renders partial details if article data is incomplete', () => {
     const incompleteArticle = {

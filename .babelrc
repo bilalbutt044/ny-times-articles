@@ -1,4 +1,16 @@
 {
-  "presets": ["@babel/preset-env", "@babel/preset-react"],
-  "plugins": ["babel-plugin-transform-vite-meta-env"]
+  "presets": [
+    ["@babel/preset-env", { "targets": { "node": "current" } }],
+
+    "@babel/preset-react",
+
+    [
+      "babel-preset-vite",
+      {
+        "env": true,
+        "glob": false
+      }
+    ]
+  ],
+  "plugins": ["babel-plugin-transform-vite-meta-env", "babel-plugin-transform-import-meta"]
 }

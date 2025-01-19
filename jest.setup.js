@@ -11,3 +11,4 @@ global.importMetaEnv = {
 
 // jest.setup.js
 process.env.VITE_API_KEY = 'mock-api-key'; // Define your mock API key
+process.env.VITE_BASE_URL = 'mock-api-key'; // Define your mock base URL
